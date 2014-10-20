@@ -8,6 +8,10 @@
 
 #import "NSString+Curso.h"
 
-@implementation NSString_Curso
+@implementation NSString (Curso)
+
+- (NSString *)explamacionesAlFinal {
+    return [self stringByAppendingString:@"!!!!!!!"];
+}
 
 @end

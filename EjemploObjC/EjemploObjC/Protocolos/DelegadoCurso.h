@@ -6,8 +6,15 @@
 //  Copyright (c) 2014 Pablo Formoso Estada. All rights reserved.
 //
 
-#ifndef EjemploObjC_DelegadoCurso_h
-#define EjemploObjC_DelegadoCurso_h
+#import <Foundation/Foundation.h>
 
+@protocol DelegadoCurso <NSObject>
 
-#endif
+- (BOOL)confirmarAsistencia;
+- (void)nombreEnElCurso;
+
+@optional
+
+- (void)esteNoLoHacemos;
+
+@end

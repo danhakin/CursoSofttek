@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6E61F33C19F57656005A2BC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F33B19F57656005A2BC7 /* main.m */; };
+		6E61F34519F57D29005A2BC7 /* Alumno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F34419F57D29005A2BC7 /* Alumno.m */; };
+		6E61F34B19F5886E005A2BC7 /* NSString+Curso.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F34A19F5886E005A2BC7 /* NSString+Curso.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		6E61F33819F57656005A2BC7 /* EjemploObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EjemploObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E61F33B19F57656005A2BC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E61F34319F57D29005A2BC7 /* Alumno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alumno.h; sourceTree = "<group>"; };
+		6E61F34419F57D29005A2BC7 /* Alumno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alumno.m; sourceTree = "<group>"; };
+		6E61F34719F5842C005A2BC7 /* DelegadoCurso.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelegadoCurso.h; sourceTree = "<group>"; };
+		6E61F34919F5886E005A2BC7 /* NSString+Curso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Curso.h"; sourceTree = "<group>"; };
+		6E61F34A19F5886E005A2BC7 /* NSString+Curso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Curso.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +64,38 @@
 		6E61F33A19F57656005A2BC7 /* EjemploObjC */ = {
 			isa = PBXGroup;
 			children = (
+				6E61F34819F587FA005A2BC7 /* Categorias */,
+				6E61F34619F583B8005A2BC7 /* Protocolos */,
+				6E61F34219F57C4B005A2BC7 /* Models */,
 				6E61F33B19F57656005A2BC7 /* main.m */,
 			);
 			path = EjemploObjC;
+			sourceTree = "<group>";
+		};
+		6E61F34219F57C4B005A2BC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E61F34319F57D29005A2BC7 /* Alumno.h */,
+				6E61F34419F57D29005A2BC7 /* Alumno.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E61F34619F583B8005A2BC7 /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				6E61F34719F5842C005A2BC7 /* DelegadoCurso.h */,
+			);
+			path = Protocolos;
+			sourceTree = "<group>";
+		};
+		6E61F34819F587FA005A2BC7 /* Categorias */ = {
+			isa = PBXGroup;
+			children = (
+				6E61F34919F5886E005A2BC7 /* NSString+Curso.h */,
+				6E61F34A19F5886E005A2BC7 /* NSString+Curso.m */,
+			);
+			path = Categorias;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E61F34B19F5886E005A2BC7 /* NSString+Curso.m in Sources */,
 				6E61F33C19F57656005A2BC7 /* main.m in Sources */,
+				6E61F34519F57D29005A2BC7 /* Alumno.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

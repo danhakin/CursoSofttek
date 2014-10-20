@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString_Curso : NSObject
+@interface NSString (Curso)
+
+- (NSString *)explamacionesAlFinal;
 
 @end
