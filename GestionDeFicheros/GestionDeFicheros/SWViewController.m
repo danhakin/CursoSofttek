@@ -64,7 +64,7 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:picker animated:YES completion:nil];
     } else {
-        [_txLabel setText:@"No se que se ha presionado"];
+        //[_txLabel setText:@"No se que se ha presionado"];
     }
 }
 
@@ -74,11 +74,11 @@
     
     if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
         UIImage *pickedImg = [info objectForKey:UIImagePickerControllerEditedImage];
-        [_camaraImageView setImage:pickedImg];
+        //[_camaraImageView setImage:pickedImg];
         
         // TODO
 #ifndef NDEBUG
-        NSLog(@"%s (line:%d) %@", __PRETTY_FUNCTION__, __LINE__, path);
+        NSLog(@"%s (line:%d) %@", __PRETTY_FUNCTION__, __LINE__, @"path");
 #endif
     }
     
