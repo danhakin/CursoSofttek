@@ -135,13 +135,14 @@
         [fileManager createFileAtPath:path
                              contents:UIImageJPEGRepresentation(pickedImg, 1.0f)
                            attributes:nil];
-        
 #ifndef NDEBUG
         NSLog(@"%s (line:%d) %@", __PRETTY_FUNCTION__, __LINE__, path);
 #endif
     }
     
     [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    [self performSegueWithIdentifier:@"verImagen" sender:nil];
 }
 
 #pragma mark - prepareForSegue
@@ -149,8 +150,13 @@
 #ifndef NDEBUG
     NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
+    if ([segue.identifier isEqualToString:@"verImagen"]) {
+        id controller = [segue destinationViewController];
+        if ([controller respondsToSelector:@selector(setData:)]) {
+            [controller performSelector:@selector(setData:) withObject:_imageView.image];
+        }
+    }
     
-    [segue destinationViewController];
     
 }
 

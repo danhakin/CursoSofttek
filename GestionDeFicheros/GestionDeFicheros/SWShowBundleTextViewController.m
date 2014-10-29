@@ -9,6 +9,7 @@
 #import "SWShowBundleTextViewController.h"
 
 @interface SWShowBundleTextViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblPlantilla;
 
 @end
 
@@ -25,6 +26,19 @@
 #ifndef NDEBUG
     NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"plan" ofType:@"txt"];
+    NSError *error;
+    NSString *content = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
+    
+    if ([error code] == 0) {
+        [_lblPlantilla setText:content];
+    } else {
+        [_lblPlantilla setText:@"Error"];
+    }
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
