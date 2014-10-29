@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E4AFED619F82AD10097D7A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4AFED519F82AD10097D7A3 /* main.m */; };
+		6E4AFED919F82AD10097D7A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4AFED819F82AD10097D7A3 /* AppDelegate.m */; };
+		6E4AFEDC19F82AD10097D7A3 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4AFEDB19F82AD10097D7A3 /* FirstViewController.m */; };
+		6E4AFEDF19F82AD10097D7A3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4AFEDE19F82AD10097D7A3 /* SecondViewController.m */; };
+		6E4AFEE219F82AD10097D7A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4AFEE019F82AD10097D7A3 /* Main.storyboard */; };
+		6E4AFEE419F82AD10097D7A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4AFEE319F82AD10097D7A3 /* Images.xcassets */; };
+		6E4AFEE719F82AD10097D7A3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E4AFEE519F82AD10097D7A3 /* LaunchScreen.xib */; };
+		6E4AFEF319F82AD10097D7A3 /* Pesten_asTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4AFEF219F82AD10097D7A3 /* Pesten_asTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E4AFEED19F82AD10097D7A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E4AFEC819F82AD10097D7A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E4AFECF19F82AD10097D7A3;
+			remoteInfo = "Pesteñas";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E4AFED019F82AD10097D7A3 /* Pesteñas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pesteñas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4AFED419F82AD10097D7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4AFED519F82AD10097D7A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E4AFED719F82AD10097D7A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E4AFED819F82AD10097D7A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E4AFEDA19F82AD10097D7A3 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		6E4AFEDB19F82AD10097D7A3 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		6E4AFEDD19F82AD10097D7A3 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		6E4AFEDE19F82AD10097D7A3 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		6E4AFEE119F82AD10097D7A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E4AFEE319F82AD10097D7A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6E4AFEE619F82AD10097D7A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6E4AFEEC19F82AD10097D7A3 /* PesteñasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PesteñasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4AFEF119F82AD10097D7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4AFEF219F82AD10097D7A3 /* Pesten_asTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pesten_asTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E4AFECD19F82AD10097D7A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4AFEE919F82AD10097D7A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E4AFEC719F82AD10097D7A3 = {
+			isa = PBXGroup;
+			children = (
+				6E4AFED219F82AD10097D7A3 /* Pesteñas */,
+				6E4AFEEF19F82AD10097D7A3 /* PesteñasTests */,
+				6E4AFED119F82AD10097D7A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E4AFED119F82AD10097D7A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E4AFED019F82AD10097D7A3 /* Pesteñas.app */,
+				6E4AFEEC19F82AD10097D7A3 /* PesteñasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E4AFED219F82AD10097D7A3 /* Pesteñas */ = {
+			isa = PBXGroup;
+			children = (
+				6E4AFED719F82AD10097D7A3 /* AppDelegate.h */,
+				6E4AFED819F82AD10097D7A3 /* AppDelegate.m */,
+				6E4AFEDA19F82AD10097D7A3 /* FirstViewController.h */,
+				6E4AFEDB19F82AD10097D7A3 /* FirstViewController.m */,
+				6E4AFEDD19F82AD10097D7A3 /* SecondViewController.h */,
+				6E4AFEDE19F82AD10097D7A3 /* SecondViewController.m */,
+				6E4AFEE019F82AD10097D7A3 /* Main.storyboard */,
+				6E4AFEE319F82AD10097D7A3 /* Images.xcassets */,
+				6E4AFEE519F82AD10097D7A3 /* LaunchScreen.xib */,
+				6E4AFED319F82AD10097D7A3 /* Supporting Files */,
+			);
+			path = "Pesteñas";
+			sourceTree = "<group>";
+		};
+		6E4AFED319F82AD10097D7A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E4AFED419F82AD10097D7A3 /* Info.plist */,
+				6E4AFED519F82AD10097D7A3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E4AFEEF19F82AD10097D7A3 /* PesteñasTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E4AFEF219F82AD10097D7A3 /* Pesten_asTests.m */,
+				6E4AFEF019F82AD10097D7A3 /* Supporting Files */,
+			);
+			path = "PesteñasTests";
+			sourceTree = "<group>";
+		};
+		6E4AFEF019F82AD10097D7A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E4AFEF119F82AD10097D7A3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E4AFECF19F82AD10097D7A3 /* Pesteñas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4AFEF619F82AD10097D7A3 /* Build configuration list for PBXNativeTarget "Pesteñas" */;
+			buildPhases = (
+				6E4AFECC19F82AD10097D7A3 /* Sources */,
+				6E4AFECD19F82AD10097D7A3 /* Frameworks */,
+				6E4AFECE19F82AD10097D7A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pesteñas";
+			productName = "Pesteñas";
+			productReference = 6E4AFED019F82AD10097D7A3 /* Pesteñas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E4AFEEB19F82AD10097D7A3 /* PesteñasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4AFEF919F82AD10097D7A3 /* Build configuration list for PBXNativeTarget "PesteñasTests" */;
+			buildPhases = (
+				6E4AFEE819F82AD10097D7A3 /* Sources */,
+				6E4AFEE919F82AD10097D7A3 /* Frameworks */,
+				6E4AFEEA19F82AD10097D7A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E4AFEEE19F82AD10097D7A3 /* PBXTargetDependency */,
+			);
+			name = "PesteñasTests";
+			productName = "PesteñasTests";
+			productReference = 6E4AFEEC19F82AD10097D7A3 /* PesteñasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E4AFEC819F82AD10097D7A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Pablo Formoso Estada";
+				TargetAttributes = {
+					6E4AFECF19F82AD10097D7A3 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					6E4AFEEB19F82AD10097D7A3 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 6E4AFECF19F82AD10097D7A3;
+					};
+				};
+			};
+			buildConfigurationList = 6E4AFECB19F82AD10097D7A3 /* Build configuration list for PBXProject "Pesteñas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E4AFEC719F82AD10097D7A3;
+			productRefGroup = 6E4AFED119F82AD10097D7A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E4AFECF19F82AD10097D7A3 /* Pesteñas */,
+				6E4AFEEB19F82AD10097D7A3 /* PesteñasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E4AFECE19F82AD10097D7A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4AFEE219F82AD10097D7A3 /* Main.storyboard in Resources */,
+				6E4AFEE719F82AD10097D7A3 /* LaunchScreen.xib in Resources */,
+				6E4AFEE419F82AD10097D7A3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4AFEEA19F82AD10097D7A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E4AFECC19F82AD10097D7A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4AFEDF19F82AD10097D7A3 /* SecondViewController.m in Sources */,
+				6E4AFED919F82AD10097D7A3 /* AppDelegate.m in Sources */,
+				6E4AFEDC19F82AD10097D7A3 /* FirstViewController.m in Sources */,
+				6E4AFED619F82AD10097D7A3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4AFEE819F82AD10097D7A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4AFEF319F82AD10097D7A3 /* Pesten_asTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E4AFEEE19F82AD10097D7A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E4AFECF19F82AD10097D7A3 /* Pesteñas */;
+			targetProxy = 6E4AFEED19F82AD10097D7A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E4AFEE019F82AD10097D7A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4AFEE119F82AD10097D7A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E4AFEE519F82AD10097D7A3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4AFEE619F82AD10097D7A3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E4AFEF419F82AD10097D7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E4AFEF519F82AD10097D7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E4AFEF719F82AD10097D7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Pesteñas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E4AFEF819F82AD10097D7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Pesteñas/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6E4AFEFA19F82AD10097D7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PesteñasTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pesteñas.app/Pesteñas";
+			};
+			name = Debug;
+		};
+		6E4AFEFB19F82AD10097D7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PesteñasTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pesteñas.app/Pesteñas";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E4AFECB19F82AD10097D7A3 /* Build configuration list for PBXProject "Pesteñas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4AFEF419F82AD10097D7A3 /* Debug */,
+				6E4AFEF519F82AD10097D7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E4AFEF619F82AD10097D7A3 /* Build configuration list for PBXNativeTarget "Pesteñas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4AFEF719F82AD10097D7A3 /* Debug */,
+				6E4AFEF819F82AD10097D7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6E4AFEF919F82AD10097D7A3 /* Build configuration list for PBXNativeTarget "PesteñasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4AFEFA19F82AD10097D7A3 /* Debug */,
+				6E4AFEFB19F82AD10097D7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E4AFEC819F82AD10097D7A3 /* Project object */;
+}

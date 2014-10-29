@@ -4,15 +4,44 @@
 
 @interface SWViewController ()
 
+@property (nonatomic, weak) IBOutlet UILabel *lblPlantilla;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation SWViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,14 +55,30 @@
     NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
     
-    // TODO
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"plan" ofType:@"txt"];
+    NSError *error;
+    NSString *content = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
     
+    if ([error code] == 0) {
+        [_lblPlantilla setText:content];
+    } else {
+        [_lblPlantilla setText:@"Error"];
+    }
+    
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d) %@", __PRETTY_FUNCTION__, __LINE__, path);
+#endif
 }
 
 - (IBAction)addPhoto:(id)sender {
 #ifndef NDEBUG
     NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
 #endif
+    
+    //[self performSegueWithIdentifier:@"leerPlantilla" sender:nil];
+    
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Opciones"
                                                              delegate:self
                                                     cancelButtonTitle:@"Cancelar"
@@ -64,7 +109,7 @@
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         [self presentViewController:picker animated:YES completion:nil];
     } else {
-        [_txLabel setText:@"No se que se ha presionado"];
+        //[_txLabel setText:@"No se que se ha presionado"];
     }
 }
 
@@ -74,9 +119,23 @@
     
     if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
         UIImage *pickedImg = [info objectForKey:UIImagePickerControllerEditedImage];
-        [_camaraImageView setImage:pickedImg];
+        [_imageView setImage:pickedImg];
         
-        // TODO
+        
+        NSTimeInterval timestamp = [[NSDate date] timeIntervalSince1970];
+        
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        
+        NSString *routePath = [[[fileManager URLsForDirectory:NSDocumentDirectory
+                                                    inDomains:NSAllDomainsMask] objectAtIndex:0] path];
+        
+        NSString *path = [NSString stringWithFormat:@"%@/%.f%@", routePath
+                          ,timestamp, @".jpg"];
+        
+        [fileManager createFileAtPath:path
+                             contents:UIImageJPEGRepresentation(pickedImg, 1.0f)
+                           attributes:nil];
+        
 #ifndef NDEBUG
         NSLog(@"%s (line:%d) %@", __PRETTY_FUNCTION__, __LINE__, path);
 #endif
@@ -84,5 +143,16 @@
     
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
+
+#pragma mark - prepareForSegue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+    
+    [segue destinationViewController];
+    
+}
+
 
 @end

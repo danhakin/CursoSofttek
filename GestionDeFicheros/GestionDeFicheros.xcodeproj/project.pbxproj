@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E35C66619FED15B00B5C47C /* SWShowBundleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E35C66519FED15B00B5C47C /* SWShowBundleTextViewController.m */; };
 		6E41B0BC18126FF500D6ADC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E41B0BB18126FF500D6ADC6 /* UIKit.framework */; };
 		6E41B0BE18126FF500D6ADC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E41B0BD18126FF500D6ADC6 /* Foundation.framework */; };
 		6E41B0C018126FF500D6ADC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E41B0BF18126FF500D6ADC6 /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E35C66419FED15B00B5C47C /* SWShowBundleTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWShowBundleTextViewController.h; sourceTree = "<group>"; };
+		6E35C66519FED15B00B5C47C /* SWShowBundleTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWShowBundleTextViewController.m; sourceTree = "<group>"; };
 		6E41B0B818126FF500D6ADC6 /* GestionDeFicheros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestionDeFicheros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E41B0BB18126FF500D6ADC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6E41B0BD18126FF500D6ADC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +110,8 @@
 				6E41B0D618126FF600D6ADC6 /* SWViewController.h */,
 				6E41B0D718126FF600D6ADC6 /* SWViewController.m */,
 				6E41B0C218126FF500D6ADC6 /* Supporting Files */,
+				6E35C66419FED15B00B5C47C /* SWShowBundleTextViewController.h */,
+				6E35C66519FED15B00B5C47C /* SWShowBundleTextViewController.m */,
 			);
 			path = GestionDeFicheros;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E35C66619FED15B00B5C47C /* SWShowBundleTextViewController.m in Sources */,
 				6E41B0C818126FF500D6ADC6 /* main.m in Sources */,
 				6E41B0CC18126FF500D6ADC6 /* SWAppDelegate.m in Sources */,
 				6E41B0D818126FF600D6ADC6 /* SWViewController.m in Sources */,

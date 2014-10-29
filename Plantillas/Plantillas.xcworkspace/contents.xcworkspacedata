@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Pages/Pages.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pesten&#x303;as/Pesten&#x303;as.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MasterDetail/MasterDetail.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HolaMundo/HolaMundo.xcodeproj">
+   </FileRef>
+</Workspace>
