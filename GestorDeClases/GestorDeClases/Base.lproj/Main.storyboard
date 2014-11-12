@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="DYz-Az-WZU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="DYz-Az-WZU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -172,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6c-Nf-GhW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572.26666666666665" y="578.4133333333333"/>
+            <point key="canvasLocation" x="752" y="606"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZQe-ps-cCm">
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PpK-p0-hHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572.26666666666665" y="1792.9866666666667"/>
+            <point key="canvasLocation" x="752" y="1804"/>
         </scene>
         <!--Item-->
         <scene sceneID="GLD-W4-odW">
@@ -262,7 +262,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvg-E8-JLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572.26666666666665" y="1177.6533333333334"/>
+            <point key="canvasLocation" x="752" y="1189"/>
         </scene>
         <!--Item-->
         <scene sceneID="GTi-d8-fC8">

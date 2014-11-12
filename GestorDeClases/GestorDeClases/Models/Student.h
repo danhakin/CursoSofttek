@@ -10,4 +10,11 @@
 
 @interface Student : NSObject
 
+@property (assign) int student_id;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *email;
+@property (nonatomic, strong) NSString *lastname;
+@property (nonatomic, strong) NSString *city;
+@property (nonatomic, strong) NSString *avatar_url;
+
 @end

@@ -16,6 +16,10 @@
 		6E25BC561A0801E800D3068F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E25BC551A0801E800D3068F /* MapKit.framework */; };
 		6E25BC5A1A08055C00D3068F /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25BC591A08055C00D3068F /* StudentsTableViewController.m */; };
 		6E25BC5E1A0808BE00D3068F /* StudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25BC5D1A0808BE00D3068F /* StudentTableViewCell.m */; };
+		6EFDB3DD1A1132F10030D264 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3DC1A1132F10030D264 /* Student.m */; };
+		6EFDB3E11A11429E0030D264 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3E01A11429E0030D264 /* SQLiteAccess.m */; };
+		6EFDB3E61A1145050030D264 /* SQLiteAccess+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3E51A1145050030D264 /* SQLiteAccess+Student.m */; };
+		6EFDB3E81A1149480030D264 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFDB3E71A1149480030D264 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,14 @@
 		6E25BC591A08055C00D3068F /* StudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsTableViewController.m; sourceTree = "<group>"; };
 		6E25BC5C1A0808BE00D3068F /* StudentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTableViewCell.h; sourceTree = "<group>"; };
 		6E25BC5D1A0808BE00D3068F /* StudentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTableViewCell.m; sourceTree = "<group>"; };
+		6EFDB3DB1A1132F10030D264 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		6EFDB3DC1A1132F10030D264 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		6EFDB3DF1A11429E0030D264 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
+		6EFDB3E01A11429E0030D264 /* SQLiteAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteAccess.m; sourceTree = "<group>"; };
+		6EFDB3E21A1143140030D264 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		6EFDB3E41A1145050030D264 /* SQLiteAccess+Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLiteAccess+Student.h"; sourceTree = "<group>"; };
+		6EFDB3E51A1145050030D264 /* SQLiteAccess+Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Student.m"; sourceTree = "<group>"; };
+		6EFDB3E71A1149480030D264 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EFDB3E81A1149480030D264 /* libsqlite3.dylib in Frameworks */,
 				6E25BC561A0801E800D3068F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +82,7 @@
 		6E0705B61A07F2A100884C63 = {
 			isa = PBXGroup;
 			children = (
+				6EFDB3E71A1149480030D264 /* libsqlite3.dylib */,
 				6E25BC551A0801E800D3068F /* MapKit.framework */,
 				6E0705C11A07F2A100884C63 /* GestorDeClases */,
 				6E0705DB1A07F2A100884C63 /* GestorDeClasesTests */,
@@ -88,6 +102,8 @@
 		6E0705C11A07F2A100884C63 /* GestorDeClases */ = {
 			isa = PBXGroup;
 			children = (
+				6EFDB3DE1A1141EA0030D264 /* Shared */,
+				6EFDB3DA1A1132A30030D264 /* Models */,
 				6E25BC5B1A08088000D3068F /* Cells */,
 				6E25BC571A0804C000D3068F /* Controllers */,
 				6E0705C61A07F2A100884C63 /* AppDelegate.h */,
@@ -103,6 +119,7 @@
 		6E0705C21A07F2A100884C63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6EFDB3E21A1143140030D264 /* db.sqlite */,
 				6E0705C31A07F2A100884C63 /* Info.plist */,
 				6E0705C41A07F2A100884C63 /* main.m */,
 			);
@@ -142,6 +159,34 @@
 				6E25BC5D1A0808BE00D3068F /* StudentTableViewCell.m */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		6EFDB3DA1A1132A30030D264 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EFDB3E31A1144930030D264 /* Categories */,
+				6EFDB3DB1A1132F10030D264 /* Student.h */,
+				6EFDB3DC1A1132F10030D264 /* Student.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6EFDB3DE1A1141EA0030D264 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6EFDB3DF1A11429E0030D264 /* SQLiteAccess.h */,
+				6EFDB3E01A11429E0030D264 /* SQLiteAccess.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6EFDB3E31A1144930030D264 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6EFDB3E41A1145050030D264 /* SQLiteAccess+Student.h */,
+				6EFDB3E51A1145050030D264 /* SQLiteAccess+Student.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E25BC5A1A08055C00D3068F /* StudentsTableViewController.m in Sources */,
+				6EFDB3E11A11429E0030D264 /* SQLiteAccess.m in Sources */,
 				6E0705C81A07F2A100884C63 /* AppDelegate.m in Sources */,
+				6EFDB3DD1A1132F10030D264 /* Student.m in Sources */,
 				6E0705C51A07F2A100884C63 /* main.m in Sources */,
 				6E25BC5E1A0808BE00D3068F /* StudentTableViewCell.m in Sources */,
+				6EFDB3E61A1145050030D264 /* SQLiteAccess+Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Student.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSMutableArray *students = [NSMutableArray.alloc init];
+    
+    for (int i = 0; i <= 1000; i++) {
+        Student *student = Student.new;
+        student.name = @"Pablo";
+        student.city = @"Santiago";
+        student.lastname = @"Formoso";
+        student.email = @"pablo@pabloformoso.com";
+        student.avatar_url = @"www.marca.com";
+        student.student_id = 999;
+        
+        [students addObject:student];
+    }
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSData *tmpData = [NSKeyedArchiver archivedDataWithRootObject:students];
+    [defaults setObject:tmpData forKey:@"students"];
+    [defaults setObject:@"1234567" forKey:@"user_password"];
+    
     return YES;
 }
 

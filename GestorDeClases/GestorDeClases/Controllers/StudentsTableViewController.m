@@ -6,8 +6,10 @@
 //  Copyright (c) 2014 Pablo Formoso Estada. All rights reserved.
 //
 
+#import "Student.h"
 #import "StudentsTableViewController.h"
 #import "StudentTableViewCell.h"
+#import "SQLiteAccess+Student.h"
 
 @interface StudentsTableViewController ()
 
@@ -19,11 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    _students = [[NSMutableArray alloc] initWithArray:[SQLiteAccess selectAll]];
     
-    _students = [NSMutableArray.alloc init];
-    for (int i = 0; i < 100; i++) {
+    /* KEYEDARCHIVE
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSArray *tmpArray = [NSKeyedUnarchiver unarchiveObjectWithData:[defaults                                                                    objectForKey:@"students"]];
+    
+    _students = [NSMutableArray.alloc initWithArray:tmpArray];
+    */
+    /*
+    for (int i = 0; i < 20000; i++) {
         [_students addObject:@"Alumno"];
     }
+    */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,9 +62,9 @@
     
     StudentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"  forIndexPath:indexPath];
     
-    NSString *alumuno = [_students objectAtIndex:indexPath.row];
-    [cell.nameLabel setText:alumuno];
-    [cell.cityLabel setText:alumuno];
+    Student *alumuno = [_students objectAtIndex:indexPath.row];
+    [cell.nameLabel setText:alumuno.name];
+    [cell.cityLabel setText:alumuno.city];
     
     return cell;
 }
