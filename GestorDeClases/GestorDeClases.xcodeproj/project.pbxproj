@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41438637BCB386BA8D1E172B /* libPods-GestorDeClases.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4024616CCF90833A330D818C /* libPods-GestorDeClases.a */; };
+		6E02448F1A13D73D006D45B1 /* StudentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E02448E1A13D73D006D45B1 /* StudentDetailViewController.m */; };
+		6E0244931A13EB23006D45B1 /* BaseXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0244921A13EB23006D45B1 /* BaseXmlParser.m */; };
 		6E0705C51A07F2A100884C63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0705C41A07F2A100884C63 /* main.m */; };
 		6E0705C81A07F2A100884C63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0705C71A07F2A100884C63 /* AppDelegate.m */; };
 		6E0705CE1A07F2A100884C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0705CC1A07F2A100884C63 /* Main.storyboard */; };
@@ -20,6 +23,7 @@
 		6EFDB3E11A11429E0030D264 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3E01A11429E0030D264 /* SQLiteAccess.m */; };
 		6EFDB3E61A1145050030D264 /* SQLiteAccess+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3E51A1145050030D264 /* SQLiteAccess+Student.m */; };
 		6EFDB3E81A1149480030D264 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EFDB3E71A1149480030D264 /* libsqlite3.dylib */; };
+		6EFDB3E91A114A110030D264 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6EFDB3E21A1143140030D264 /* db.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1696897AC52284074D29C174 /* Pods-GestorDeClases.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestorDeClases.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestorDeClases/Pods-GestorDeClases.release.xcconfig"; sourceTree = "<group>"; };
+		4024616CCF90833A330D818C /* libPods-GestorDeClases.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GestorDeClases.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E02448D1A13D73D006D45B1 /* StudentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentDetailViewController.h; sourceTree = "<group>"; };
+		6E02448E1A13D73D006D45B1 /* StudentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentDetailViewController.m; sourceTree = "<group>"; };
+		6E0244911A13EB23006D45B1 /* BaseXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseXmlParser.h; sourceTree = "<group>"; };
+		6E0244921A13EB23006D45B1 /* BaseXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseXmlParser.m; sourceTree = "<group>"; };
 		6E0705BF1A07F2A100884C63 /* GestorDeClases.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestorDeClases.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0705C31A07F2A100884C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0705C41A07F2A100884C63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +67,7 @@
 		6EFDB3E41A1145050030D264 /* SQLiteAccess+Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SQLiteAccess+Student.h"; sourceTree = "<group>"; };
 		6EFDB3E51A1145050030D264 /* SQLiteAccess+Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SQLiteAccess+Student.m"; sourceTree = "<group>"; };
 		6EFDB3E71A1149480030D264 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7954699BB78143839B7BD086 /* Pods-GestorDeClases.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestorDeClases.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GestorDeClases/Pods-GestorDeClases.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +77,7 @@
 			files = (
 				6EFDB3E81A1149480030D264 /* libsqlite3.dylib in Frameworks */,
 				6E25BC561A0801E800D3068F /* MapKit.framework in Frameworks */,
+				41438637BCB386BA8D1E172B /* libPods-GestorDeClases.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +91,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		078712249FC8DD3A395DF347 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4024616CCF90833A330D818C /* libPods-GestorDeClases.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68D7C92BB5CB25B3C891C07A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7954699BB78143839B7BD086 /* Pods-GestorDeClases.debug.xcconfig */,
+				1696897AC52284074D29C174 /* Pods-GestorDeClases.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E0244901A13EAD5006D45B1 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				6E0244911A13EB23006D45B1 /* BaseXmlParser.h */,
+				6E0244921A13EB23006D45B1 /* BaseXmlParser.m */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
 		6E0705B61A07F2A100884C63 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +125,8 @@
 				6E0705C11A07F2A100884C63 /* GestorDeClases */,
 				6E0705DB1A07F2A100884C63 /* GestorDeClasesTests */,
 				6E0705C01A07F2A100884C63 /* Products */,
+				68D7C92BB5CB25B3C891C07A /* Pods */,
+				078712249FC8DD3A395DF347 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +142,7 @@
 		6E0705C11A07F2A100884C63 /* GestorDeClases */ = {
 			isa = PBXGroup;
 			children = (
+				6E0244901A13EAD5006D45B1 /* WebServices */,
 				6EFDB3DE1A1141EA0030D264 /* Shared */,
 				6EFDB3DA1A1132A30030D264 /* Models */,
 				6E25BC5B1A08088000D3068F /* Cells */,
@@ -148,6 +189,8 @@
 			children = (
 				6E25BC581A08055C00D3068F /* StudentsTableViewController.h */,
 				6E25BC591A08055C00D3068F /* StudentsTableViewController.m */,
+				6E02448D1A13D73D006D45B1 /* StudentDetailViewController.h */,
+				6E02448E1A13D73D006D45B1 /* StudentDetailViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E0705E21A07F2A100884C63 /* Build configuration list for PBXNativeTarget "GestorDeClases" */;
 			buildPhases = (
+				25F583E2E009440B7FBA235F /* Check Pods Manifest.lock */,
 				6E0705BB1A07F2A100884C63 /* Sources */,
 				6E0705BC1A07F2A100884C63 /* Frameworks */,
 				6E0705BD1A07F2A100884C63 /* Resources */,
+				3E4102DE80465773276AA31A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EFDB3E91A114A110030D264 /* db.sqlite in Resources */,
 				6E0705CE1A07F2A100884C63 /* Main.storyboard in Resources */,
 				6E0705D31A07F2A100884C63 /* LaunchScreen.xib in Resources */,
 				6E0705D01A07F2A100884C63 /* Images.xcassets in Resources */,
@@ -289,18 +335,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25F583E2E009440B7FBA235F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E4102DE80465773276AA31A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GestorDeClases/Pods-GestorDeClases-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E0705BB1A07F2A100884C63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6E25BC5A1A08055C00D3068F /* StudentsTableViewController.m in Sources */,
+				6E02448F1A13D73D006D45B1 /* StudentDetailViewController.m in Sources */,
 				6EFDB3E11A11429E0030D264 /* SQLiteAccess.m in Sources */,
 				6E0705C81A07F2A100884C63 /* AppDelegate.m in Sources */,
 				6EFDB3DD1A1132F10030D264 /* Student.m in Sources */,
 				6E0705C51A07F2A100884C63 /* main.m in Sources */,
 				6E25BC5E1A0808BE00D3068F /* StudentTableViewCell.m in Sources */,
 				6EFDB3E61A1145050030D264 /* SQLiteAccess+Student.m in Sources */,
+				6E0244931A13EB23006D45B1 /* BaseXmlParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +501,7 @@
 		};
 		6E0705E31A07F2A100884C63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7954699BB78143839B7BD086 /* Pods-GestorDeClases.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GestorDeClases/Info.plist;
@@ -430,6 +512,7 @@
 		};
 		6E0705E41A07F2A100884C63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1696897AC52284074D29C174 /* Pods-GestorDeClases.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GestorDeClases/Info.plist;

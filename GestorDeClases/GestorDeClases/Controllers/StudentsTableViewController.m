@@ -9,6 +9,7 @@
 #import "Student.h"
 #import "StudentsTableViewController.h"
 #import "StudentTableViewCell.h"
+#import "StudentDetailViewController.h"
 #import "SQLiteAccess+Student.h"
 
 @interface StudentsTableViewController ()
@@ -103,14 +104,19 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+#pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    StudentDetailViewController *controller = (StudentDetailViewController *)[segue destinationViewController];
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    Student *tmp = [_students objectAtIndex:indexPath.row];
+    [controller setEmail:tmp.email];
 }
-*/
+
+
+
+
+
+
 
 @end

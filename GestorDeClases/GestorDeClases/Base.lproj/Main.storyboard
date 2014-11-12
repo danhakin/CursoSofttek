@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="764" y="-8"/>
         </scene>
-        <!--View Controller-->
+        <!--Student Detail View Controller-->
         <scene sceneID="yec-vS-LBh">
             <objects>
-                <viewController id="fMr-dK-DTy" sceneMemberID="viewController">
+                <viewController id="fMr-dK-DTy" customClass="StudentDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nlL-QN-y9L">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +119,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="y92-VS-Lre"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="r1l-se-g2Q" id="OzQ-wl-bFR"/>
+                        <outlet property="cityLabel" destination="4D3-aA-0jq" id="obJ-2y-Dsv"/>
+                        <outlet property="nameLabel" destination="6Bi-oS-6co" id="cun-27-T3a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iru-Xn-seY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,7 +13,11 @@
 + (Student *)selectByEmail:(NSString *)aEmail {
     // Implementar para el miercoles en la vista de detalle del
     // alumno buscar por email pablo@pabloformoso.com o juan@gmail.com
-    return nil;
+    NSString *query = [NSString stringWithFormat:@"SELECT * FROM alumnos WHERE email = '%@'", aEmail];
+    NSDictionary *dic = [SQLiteAccess selectOneRowWithSQL:query];
+    
+    Student *student = [Student.alloc initWithDictionary:dic];
+    return student;
 }
 
 + (NSArray *)selectAll {
@@ -23,9 +27,7 @@
     NSMutableArray *students = [NSMutableArray.alloc init];
     
     for (NSDictionary *dic in tmp) {
-        Student *student = [Student.alloc init];
-        student.name = [dic objectForKey:@"nombre"];
-        student.city = [dic objectForKey:@"ciudad"];
+        Student *student = [Student.alloc initWithDictionary:dic];
         [students addObject:student];
     }
     

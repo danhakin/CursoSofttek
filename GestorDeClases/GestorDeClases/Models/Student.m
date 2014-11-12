@@ -10,6 +10,17 @@
 
 @implementation Student
 
+- (id)initWithDictionary:(NSDictionary *)dic {
+    self = [super init];
+    if (self) {
+        self.name = [dic objectForKey:@"nombre"];
+        self.city = [dic objectForKey:@"ciudad"];
+        self.email = [dic objectForKey:@"email"];
+    }
+    return self;
+}
+
+
 - (id)initWithCoder:(NSCoder *)coder {
 #ifndef NDEBUG
     NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
