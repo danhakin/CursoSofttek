@@ -19,6 +19,7 @@
 		6E25BC561A0801E800D3068F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E25BC551A0801E800D3068F /* MapKit.framework */; };
 		6E25BC5A1A08055C00D3068F /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25BC591A08055C00D3068F /* StudentsTableViewController.m */; };
 		6E25BC5E1A0808BE00D3068F /* StudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E25BC5D1A0808BE00D3068F /* StudentTableViewCell.m */; };
+		6E74014F1A1A687700C615C2 /* StudentXmlClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E74014E1A1A687700C615C2 /* StudentXmlClient.m */; };
 		6EFDB3DD1A1132F10030D264 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3DC1A1132F10030D264 /* Student.m */; };
 		6EFDB3E11A11429E0030D264 /* SQLiteAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3E01A11429E0030D264 /* SQLiteAccess.m */; };
 		6EFDB3E61A1145050030D264 /* SQLiteAccess+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFDB3E51A1145050030D264 /* SQLiteAccess+Student.m */; };
@@ -59,6 +60,9 @@
 		6E25BC591A08055C00D3068F /* StudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsTableViewController.m; sourceTree = "<group>"; };
 		6E25BC5C1A0808BE00D3068F /* StudentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTableViewCell.h; sourceTree = "<group>"; };
 		6E25BC5D1A0808BE00D3068F /* StudentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTableViewCell.m; sourceTree = "<group>"; };
+		6E74014D1A1A687700C615C2 /* StudentXmlClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentXmlClient.h; sourceTree = "<group>"; };
+		6E74014E1A1A687700C615C2 /* StudentXmlClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentXmlClient.m; sourceTree = "<group>"; };
+		6E7401501A1A801300C615C2 /* SWNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWNetworkDelegate.h; sourceTree = "<group>"; };
 		6EFDB3DB1A1132F10030D264 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		6EFDB3DC1A1132F10030D264 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		6EFDB3DF1A11429E0030D264 /* SQLiteAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteAccess.h; sourceTree = "<group>"; };
@@ -113,6 +117,9 @@
 			children = (
 				6E0244911A13EB23006D45B1 /* BaseXmlParser.h */,
 				6E0244921A13EB23006D45B1 /* BaseXmlParser.m */,
+				6E74014D1A1A687700C615C2 /* StudentXmlClient.h */,
+				6E74014E1A1A687700C615C2 /* StudentXmlClient.m */,
+				6E7401501A1A801300C615C2 /* SWNetworkDelegate.h */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -379,6 +386,7 @@
 				6E0705C81A07F2A100884C63 /* AppDelegate.m in Sources */,
 				6EFDB3DD1A1132F10030D264 /* Student.m in Sources */,
 				6E0705C51A07F2A100884C63 /* main.m in Sources */,
+				6E74014F1A1A687700C615C2 /* StudentXmlClient.m in Sources */,
 				6E25BC5E1A0808BE00D3068F /* StudentTableViewCell.m in Sources */,
 				6EFDB3E61A1145050030D264 /* SQLiteAccess+Student.m in Sources */,
 				6E0244931A13EB23006D45B1 /* BaseXmlParser.m in Sources */,

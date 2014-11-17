@@ -11,6 +11,8 @@
 #import "StudentTableViewCell.h"
 #import "StudentDetailViewController.h"
 #import "SQLiteAccess+Student.h"
+#import "StudentXmlClient.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface StudentsTableViewController ()
 
@@ -22,8 +24,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    _students = [[NSMutableArray alloc] initWithArray:[SQLiteAccess selectAll]];
+    
+    _students = NSMutableArray.new;
+    
+    // Lanzamos el web services para recuperar los datos
+    StudentXmlClient *ws = StudentXmlClient.new;
+    [ws getStudentsWithController:self];
+    
+    MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [HUD setLabelText:@"Cargando..."];
+    
+    //SQLite
+    //_students = [[NSMutableArray alloc] initWithArray:[SQLiteAccess selectAll]];
     
     /* KEYEDARCHIVE
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -114,7 +126,30 @@
 }
 
 
+#pragma mark - Protocolo Informal
+- (void)receiveData:(NSMutableArray *)anArray {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+    _students = [NSMutableArray arrayWithArray:anArray];
+    [self.tableView reloadData];
+    
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+}
 
+- (void)dataFailure:(NSString *)anErrorMessage {
+#ifndef NDEBUG
+    NSLog(@"%s (line:%d)", __PRETTY_FUNCTION__, __LINE__);
+#endif
+    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:anErrorMessage
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 
 
 
